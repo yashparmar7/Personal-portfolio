@@ -76,22 +76,22 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center md:flex-row md:space-x-6 space-y-4 md:space-y-0">
           <li className="hover:text-[#12F7D6]">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li className="hover:text-[#12F7D6]">
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li className="hover:text-[#12F7D6]">
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li className="hover:text-[#12F7D6]">
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
-          <li className="hover:text-[#12F7D6]">
+          {/* <li className="hover:text-[#12F7D6]">
             <a href="#">Blogs</a>
-          </li>
+          </li> */}
           <li className="hover:text-[#12F7D6]">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -136,7 +136,10 @@ const Navbar = () => {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <FontAwesomeIcon icon={faGithub} className="text-[#12F7D6] text-xl" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-[#12F7D6] text-xl"
+              />
             </motion.div>
             <span className="text-white">
               <a href="https://github.com/Yashparmar7">Github</a>
@@ -148,7 +151,10 @@ const Navbar = () => {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <FontAwesomeIcon icon={faInstagram} className="text-[#12F7D6] text-xl" />
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-[#12F7D6] text-xl"
+              />
             </motion.div>
             <span className="text-white">
               <a href="https://www.instagram.com/__yashhh_x/">Instagram</a>
@@ -160,7 +166,10 @@ const Navbar = () => {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <FontAwesomeIcon icon={faLinkedin} className="text-[#12F7D6] text-xl" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="text-[#12F7D6] text-xl"
+              />
             </motion.div>
             <span className="text-white">
               <a href="https://www.linkedin.com/in/yash-parmar-8367a025b/">

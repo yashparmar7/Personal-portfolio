@@ -2,18 +2,17 @@ import { motion } from "framer-motion";
 import MyPhoto from "../../assets/my-photo-1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
-import MyPdf from "../../Resume/Yashparmar_resume.pdf"
+import MyPdf from "../../Resume/Yashparmar_resume.pdf";
 import {
   faBagShopping,
   faDownload,
   faEnvelope,
-  faLink,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto min-h-screen p-4 md:p-8">
+    <div className="container mx-auto min-h-screen p-4 md:p-8" id="home">
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +62,7 @@ const HeroSection = () => {
               <p className="text-xs md:text-sm lg:text-md font-mono text-gray-400 tracking-widest">
                 <Typewriter
                   options={{
-                    strings: ["Front-end Developer", "PHP Web Developer"],
+                    strings: ["MERN Stack Developer", "PHP Web Developer"],
                     autoStart: true,
                     loop: true,
                   }}
@@ -97,12 +96,12 @@ const HeroSection = () => {
                     Full-time / Fresher
                   </span>
                 </div>
-                <div className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-6">
+                {/* <div className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-6">
                   <FontAwesomeIcon icon={faLink} className="text-[#12F7D6]" />
                   <span className="text-xs md:text-sm lg:text-base">
                     www.yashparmar07.com
                   </span>
-                </div>
+                </div> */}
               </div>
 
               {/* Skills */}
@@ -170,12 +169,12 @@ const HeroSection = () => {
               I{"'"}m <span className="text-[#12F7D6]">Yash Parmar</span>
             </h1>
             <h1
-              className="text-[18px] md:text-[28px] lg:text-[35px] font-semibold"
+              className="text-[16px] md:text-[14px] lg:text-[32px] font-semibold"
               style={{ minWidth: "200px" }}
             >
               <Typewriter
                 options={{
-                  strings: ["Front-end Developer", "PHP Web Developer"],
+                  strings: ["MERN Stack Developer", "PHP Web Developer"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -212,27 +211,36 @@ const HeroSection = () => {
             damping: 10,
             delay: 0.6,
           }}
-          className="flex justify-center items-center mt-5 md:mt-0"
+          className="flex justify-center items-center mt-4 md:mt-0"
         >
-          <div className="flex flex-col gap-6 md:gap-10 lg:gap-20 text-white w-full max-w-xs md:max-w-sm lg:max-w-md bg-[#1A1E23] rounded-[50px] md:rounded-[80px] p-6 md:p-10 lg:p-12">
-            <div className="flex flex-row justify-start items-center gap-4 md:gap-7">
-              <h1 className="text-2xl md:text-3xl lg:text-[45px] text-[#12F7D6]">
-                4
-              </h1>
-              <p className="text-sm md:text-xl">Programming Languages</p>
-            </div>
-            <div className="flex flex-row justify-start items-center gap-4 md:gap-7">
-              <h1 className="text-2xl md:text-3xl lg:text-[45px] text-[#12F7D6]">
-                2
-              </h1>
-              <p className="text-sm md:text-xl">Total Projects</p>
-            </div>
-            <div className="flex flex-row justify-start items-center gap-4 md:gap-7">
-              <h1 className="text-2xl md:text-3xl lg:text-[45px] text-[#12F7D6]">
-                0
-              </h1>
-              <p className="text-sm md:text-xl">Experience</p>
-            </div>
+          <div className="flex flex-col gap-4 md:gap-6 text-white w-full max-w-[280px] md:max-w-sm bg-[#1A1E23] rounded-[30px] md:rounded-[40px] p-4 md:p-6">
+            {/* Section Item */}
+            {[
+              {
+                title: "Programming Languages",
+                count: 2,
+                desc: "JavaScript, PHP",
+              },
+              { title: "Libraries", count: 1, desc: "React.js" },
+              { title: "Frameworks", count: 1, desc: "Express.js" },
+              { title: "Databases", count: 2, desc: "MongoDB, MySQL" },
+              { title: "Runtime", count: 1, desc: "Node.js" },
+              {
+                title: "Total Projects",
+                count: 4,
+                desc: "StayNest, Let's Notes, VirtualR, Coffee Culture",
+              },
+            ].map((item, index) => (
+              <div key={index} className="flex flex-col gap-0.5">
+                <div className="flex items-center gap-3">
+                  <h1 className="text-xl md:text-2xl text-[#12F7D6]">
+                    {item.count}
+                  </h1>
+                  <p className="text-sm md:text-base">{item.title}</p>
+                </div>
+                <p className="text-xs text-gray-400 ml-1">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

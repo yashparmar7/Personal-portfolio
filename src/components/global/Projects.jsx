@@ -6,16 +6,18 @@ import CarouselWork from "./Carousel";
 
 const Projects = () => {
   return (
-    <main className="relative bg-[#1A1E23] min-h-screen flex justify-center items-center py-4 sm:py-8">
+    <main
+      className="relative bg-[#1A1E23] min-h-screen flex justify-center items-center py-4 sm:py-8"
+      id="projects"
+    >
       {/* Background Image */}
       <div
-  className="absolute inset-0 z-0 bg-center bg-repeat opacity-30 md:bg-[length:calc(100%/3)] lg:bg-[length:calc(100%/4)]"
-  style={{
-    backgroundImage: `url(${workImg})`,
-    backgroundSize: 'calc(100% / 2)', 
-  }}
-/>
-
+        className="absolute inset-0 z-0 bg-center bg-repeat opacity-30 md:bg-[length:calc(100%/3)] lg:bg-[length:calc(100%/4)]"
+        style={{
+          backgroundImage: `url(${workImg})`,
+          backgroundSize: "calc(100% / 2)",
+        }}
+      />
 
       <section className="relative w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
         {/* Container */}
@@ -70,16 +72,17 @@ const Projects = () => {
           </motion.p>
 
           <motion.div
-           initial={{ opacity: 0, scale:  0 }}
-           whileInView={{ opacity: 1, scale: 1 }}
-           viewport={{ once: false }}
-           transition={{
-             type: "spring",
-             stiffness: 50,
-             damping: 10,
-             delay: 0.6,
-           }}
-          className="w-full max-w-full md:max-w-screen-md mt-6 px-4 md:px-0 mx-auto">
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              damping: 10,
+              delay: 0.6,
+            }}
+            className="w-full max-w-full md:max-w-screen-md mt-6 px-4 md:px-0 mx-auto"
+          >
             <CarouselWork />
           </motion.div>
         </div>
