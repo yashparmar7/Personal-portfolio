@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import MyPhoto from "../../assets/my-photo-1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
-import MyPdf from "../../Resume/Yashparmar_resume.pdf";
+import MyPdf from "../../Resume/yash_parmar_resume.pdf";
 import {
   faBagShopping,
   faDownload,
