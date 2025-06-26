@@ -126,7 +126,7 @@ const Skills = () => {
                 }}
                 className="flex flex-col justify-center items-center"
               >
-                <div className="w-20 h-20 flex justify-center items-center bg-[#303030] rounded-full">
+                <div className="w-20 h-20 flex justify-center items-center bg-[#303030] border-2 border-white rounded-full">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
                     alt="Express.js Logo"
@@ -156,7 +156,7 @@ const Skills = () => {
                 }}
                 className="flex flex-col justify-center items-center"
               >
-                <div className="w-20 h-20 flex justify-center items-center bg-[#001A2B] rounded-full">
+                <div className="w-20 h-20 flex justify-center items-center bg-[#001A2B]  border-2 border-white rounded-full">
                   <img
                     src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
                     alt="MongoDB"
@@ -180,7 +180,7 @@ const Skills = () => {
                 }}
                 className="flex flex-col justify-center items-center"
               >
-                <div className="w-20 h-20 flex justify-center items-center bg-[#F29111] rounded-full">
+                <div className="w-20 h-20 flex justify-center items-center bg-[#F29111]  border-2 border-white rounded-full">
                   <img
                     src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
                     alt="MySQL"
@@ -219,7 +219,7 @@ const SkillItem = ({ icon, color, label, delay = 0.9 }) => (
   >
     <div
       className="w-20 h-20 flex justify-center items-center rounded-full"
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: color, border: " 2px solid white" }}
     >
       <FontAwesomeIcon icon={icon} className="text-white text-4xl font-bold" />
     </div>
