@@ -6,6 +6,8 @@ import Skills from "./components/global/Skills";
 import Projects from "./components/global/Projects";
 import Contact from "./components/global/Contact";
 import Footer from "./components/global/Footer";
+import emailjs from "emailjs-com";
+emailjs.init("dUN_OHQ4MtdLnDqyI");
 
 const App = () => {
   return (
